@@ -1,25 +1,23 @@
 # Site settings
-title:
-email:
+title: Adrian Yi's Personal Page
+email: sjay87@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal page to showcase my work!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner:
-email:
+owner: Adrian Yi
+email: sjay87@gmail.com
 facebook_username:
 twitter_username:
-github_username:
+github_username: adrianyi
 address:
-  - line:
-  - line:
-  # Feel free to add more lines here 
-telephone:
-copyright:
+  - line: 590 Commonwealth Ave. Room-236
+  - line: Boston, MA 02215
+  # Feel free to add more lines here
+telephone: 617-353-5813
+copyright: Adrian Yi
 
 # API settings
 google_api_key:
