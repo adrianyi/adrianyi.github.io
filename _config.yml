@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal page to showcase my work!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
+permalink: '/:year/:month/:title.html' # link for posts
 
 # User setting
 owner: Adrian Yi
