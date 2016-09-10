@@ -8,7 +8,7 @@
           {% for post in site.posts %}
 
           <div class="col-md-6">
-            <div class="portfolio-item">
+            <div class="portfolio-item" style="width:500px;height:333px;overflow:hidden;">
               <a href="{{ post.url }}">
                 <img class="img-portfolio img-responsive" src="{{ post.image }}">
               </a>
@@ -18,7 +18,9 @@
           {% endfor %}
         </div>
         <!-- /.row (nested) -->
+        <!-- remove for until more items are available
         <a href="#" class="btn btn-dark">View More Items</a>
+        -->
       </div>
       <!-- /.col-lg-10 -->
     </div>
