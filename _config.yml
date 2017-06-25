@@ -1,6 +1,6 @@
 # Site settings
 title: Adrian Yi's Personal Page
-email: sjay87@gmail.com
+email: a@adrianyi.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal page to showcase my work!
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -14,11 +14,11 @@ facebook_username:
 twitter_username:
 linkedin_username: adrianyi
 github_username: adrianyi
-address:
-  - line: 590 Commonwealth Ave. Room-236
-  - line: Boston, MA 02215
+address: San Jose, CA
+#  - line: 590 Commonwealth Ave. Room-236
+#  - line: Boston, MA 02215
   # Feel free to add more lines here
-telephone: 617-353-5813
+#telephone: 617-353-5813
 copyright: Adrian Yi
 
 # API settings
