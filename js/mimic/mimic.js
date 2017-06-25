@@ -3,9 +3,9 @@
 
 function switchToHTTPS() {
   var current_url = window.location.href;
-  if (current_url[0:4] == 'http\:') {
-    console.log('NOT HTTPS')
-    window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
+  if (current_url[4] == ':') {
+    //window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
+    window.location = 'https://adrianyi.com/2017/06/CVMimic.html';
   }
 }
 
