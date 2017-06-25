@@ -53,6 +53,11 @@ function log(node_name, msg) {
 
 // Start button
 function onStart() {
+  current_url = window.location.href;
+  if (current_url[0:4] == 'http:') {
+    window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
+  }
+  
   if (detector && !detector.isRunning) {
     $("#logs").html("");  // clear out previous log
     detector.start();  // start detector
