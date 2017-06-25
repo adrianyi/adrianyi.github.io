@@ -3,7 +3,7 @@
 
 current_url = window.location.href;
 if (current_url[0:4] == 'http:') {
-  window.location = current_url[0:3] + 's' current_url[4:current_url.length-1]
+  window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
 }
 
 // --- Affectiva setup ---
