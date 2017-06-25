@@ -2,7 +2,7 @@
 // Fun game where you need to express emojis being displayed
 
 function switchToHTTPS() {
-  current_url = window.location.href;
+  var current_url = window.location.href;
   if (current_url[0:4] == 'http:') {
     console.log('NOT HTTPS')
     window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
