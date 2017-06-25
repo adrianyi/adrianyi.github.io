@@ -1,11 +1,6 @@
 // Mimic Me!
 // Fun game where you need to express emojis being displayed
 
-current_url = window.location.href;
-if (current_url[0:4] == 'http:') {
-  window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
-}
-
 // --- Affectiva setup ---
 
 // The affdex SDK Needs to create video and canvas elements in the DOM
