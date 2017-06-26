@@ -231,6 +231,7 @@ function makeNewEmojiUnicode(oldUnicode) {
 function mimicEmoji(face) {
   // set <div id="target"></div> to target emojis
   var faceEmojiUnicode = toUnicode(face.emojis.dominantEmoji);
+  var currentTime = performance.now();
   if (faceEmojiUnicode == targetEmojiUnicode) {
     // If
     correct += 1;
