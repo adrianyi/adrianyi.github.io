@@ -238,6 +238,7 @@ function mimicEmoji(face) {
     setScore(correct, total)
     targetEmojiUnicode = makeNewEmojiUnicode(targetEmojiUnicode);
     setTargetEmoji(targetEmojiUnicode);
+    lastTime = currentTime;
   }
   else if (currentTime - lastTime > 8000) {
     targetEmojiUnicode = makeNewEmojiUnicode(targetEmojiUnicode);
