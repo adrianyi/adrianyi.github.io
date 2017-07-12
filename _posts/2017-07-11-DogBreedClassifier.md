@@ -84,11 +84,11 @@ Dog breed detected is a . . . Pembroke_welsh_corgi
 
 <img src="/img/dogbreedclassifier/Wishbone.jpg" height="224" title="If you don't know this dog, you're too young! Wishbone! He's a Jack Russel Terrier.">  
 Dog breed detected is a . . . American_staffordshire_terrier  
-**Wrong :(**
+**Wrong :( But it's pretty close!** It probably got confused with all the clothing.
 
 <img src="/img/dogbreedclassifier/Adrian.jpg" height="224" title="This is me. Not a dog.">  
 The person looks like a . . . Basenji  
 **I'm satisfied**, below is a picture of a basenji.  
 <img src="/img/dogbreedclassifier/Basenji.jpg" height="224" title="This is a Basenji!">
 
-I will try to turn this into a web app soon! Come back later to check!
+#### I will try to turn this into a web app soon! Come back later to check!
