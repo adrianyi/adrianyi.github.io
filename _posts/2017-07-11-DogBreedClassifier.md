@@ -83,7 +83,7 @@ Dog breed detected is a . . . Pembroke_welsh_corgi
 **Correct!**
 
 <img src="/img/dogbreedclassifier/Wishbone.jpg" height="224" title="If you don't know this dog, you're too young! Wishbone! He's a Jack Russel Terrier.">  
-Dog breed detected is a . . . American_staffordshire_terrier
+Dog breed detected is a . . . American_staffordshire_terrier  
 **Wrong :(**
 
 <img src="/img/dogbreedclassifier/Adrian.jpg" height="224" title="This is me. Not a dog.">  
