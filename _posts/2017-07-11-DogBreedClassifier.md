@@ -11,8 +11,8 @@ In this project, convolutional neural networks (CNNs) are used to classify an im
 [Second](#transfer-learning-on-resnet50), I made a transfer learning CNN using bottleneck features from ResNet50 pre-trained on ImageNet (85.5% test accuracy).
 
 In the final product, the app should do the following:
-1. Detect either a dog or a clearly visible human face
-2. If it detects one, go to #3.  If not, throw an error.
+1. Detect either a dog or a clearly visible human face (OpenCV Haars Cascade)
+2. If it detects one, go to #3.  If not, given an error message.
 3. Classify the image into one of the 133 dog breeds.
 
 Below is an example of an image and its output. See below for [more examples](#examples)!
