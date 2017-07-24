@@ -83,7 +83,7 @@ function onReset() {
   }
   correct = 0;
   total = 0;
-  setScore(correct,total); // set score back to zero
+  setScore(0,0); // set score back to zero
   $('#results').html("");  // clear out results
   $("#logs").html("");  // clear out previous log
 
@@ -151,7 +151,7 @@ detector.addEventListener("onImageResultsSuccess", function(faces, image, timest
 
     // TODO: Call your function to run the game (define it first!)
     // <your code here>
-    mimicEmoji(faces[0])
+    mimicEmoji(faces[0]);
   }
 });
 
@@ -176,8 +176,8 @@ function drawFeaturePoints(canvas, img, face) {
     // TODO: Draw feature point, e.g. as a circle using ctx.arc()
     // See: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
     // <your code here>
-    ctx.beginPath()
-    ctx.arc(featurePoint['x'],featurePoint['y'],2,0,2*Math.PI)
+    ctx.beginPath();
+    ctx.arc(featurePoint['x'],featurePoint['y'],2,0,2*Math.PI);
     ctx.fill();
   }
 }
@@ -195,8 +195,8 @@ function drawEmoji(canvas, img, face) {
   // See: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText
   // TIP: Pick a particular feature point as an anchor so that the emoji sticks to your face
   // <your code here>
-  faceFeature = face.featurePoints[32]
-  ctx.fillText(face.emojis.dominantEmoji,faceFeature['x']+40,faceFeature['y']-50)
+  faceFeature = face.featurePoints[32];
+  ctx.fillText(face.emojis.dominantEmoji,faceFeature['x']+40,faceFeature['y']-50);
 }
 
 // TODO: Define any variables and functions to implement the Mimic Me! game mechanics
@@ -238,7 +238,7 @@ function mimicEmoji(face) {
   if (faceEmojiUnicode == targetEmojiUnicode) {
     // If
     correct += 1;
-    setScore(correct, total)
+    setScore(correct, total);
     targetEmojiUnicode = makeNewEmojiUnicode(targetEmojiUnicode);
     setTargetEmoji(targetEmojiUnicode);
     lastTime = currentTime;
