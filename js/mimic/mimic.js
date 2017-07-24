@@ -81,8 +81,8 @@ function onReset() {
   if (detector && detector.isRunning) {
     detector.reset();
   }
-  var correct = 0;
-  var total = 0;
+  correct = 0;
+  total = 0;
   setScore(correct,total); // set score back to zero
   $('#results').html("");  // clear out results
   $("#logs").html("");  // clear out previous log
