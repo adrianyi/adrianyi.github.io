@@ -1,10 +1,9 @@
 ---
 layout: portfolio_entry
-title: Facial Features Tracker & Facial Filter
+title: Facial Feature Detection & Filter
 image: /img/facialfeatures/sunglasses.gif
 ---
 
-# Facial Features (OpenCV & CNN)
 **I created an end-to-end facial feature detector and a facial filter app using OpenCV & custom CNN.  OpenCV was used to detect faces.  CNN was used to train facial feature positions.  These were combined to create a facial filter app.**
 
 *Keywords*: Python, OpenCV, CNN, TensorFlow, Keras, Numpy, Pyplot  
