@@ -14,7 +14,7 @@ image: /img/facialfeatures/sunglasses.gif
 OpenCV provides a fast face detection algorithm using [Haar cascades](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html).  There are actually several other [pre-trained cascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) available.
 
 Here is a GIF of me with my face and eyes tracked:  
-<div align="center">
+<div class="picture">
 ![](/img/facialfeatures/face_eye_tracker.gif)
 </div>
 
@@ -36,7 +36,7 @@ faces = face_cascade.detectMultiScale(gray, 1.1, 6)
 ### Facial blurring
 
 You can use this to do something like blur your face:  
-<div align="center">
+<div class="picture">
 ![](/img/facialfeatures/facial_blur.gif)
 </div>  
 ``` Python
@@ -46,7 +46,7 @@ for x, y, w, h in faces:
 
 ## Facial feature detection using CNN
 Here's a [dataset from Kaggle](https://www.kaggle.com/c/facial-keypoints-detection/data) that has 7049 human labeled images with positions for 30 facial features.  Here's an example from that dataset:  
-<div align=center>
+<div class="picture">
 ![](/img/facialfeatures/mcdreamy.png 'McDreamy :P')
 </div>
 We can use this to train a CNN to track those features!  My other project, [Emoji Mimicking Game](https://adrianyi.com/2017/06/CVMimic.html), uses an API by Affectiva that basically does this.  There are definitely much more complex ones, but the concept is the same and this is sufficient for our purposes.
@@ -86,18 +86,24 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 Training this model on the dataset above gives the following learning curve.  I ran it for 200 epochs, which only took a couple minutes (<1s/epoch).  We can use more complicated model, but this is sufficient for our purposes here.
+<div class="picture">
 ![](/img/facialfeatures/learning_curve.png 'Learning curve! Not so exciting...')
+</div>
 The loss is RMS with the positions normalized to [-1,1] for both x and y.  Both training and validation losses are below 0.002, which is pretty good for such a simple model.
 
 We can test this on my video feed again!
-<div align=center>
+<div class="picture">
 ![](/img/facialfeatures/facial_features.gif)
 </div>
 It has a little trouble with the reflections on my glasses, and it is slightly off when my head is tilted.  However, it performs pretty well overall.  What can we do with this?  We already saw that you can try to [interpret emotions](https://adrianyi.com/2017/06/CVMimic.html).  
 Below is a facial filter using sunglasses!
-<div align=center>
+<div class="picture">
 ![](/img/facialfeatures/sunglasses.gif 'Tada.')
 </div>
 Now you know how Snapchat implements their facial filters!
 
 Thanks for reading! :smiley:
+
+<style>
+.picture {align: center}
+</style>
