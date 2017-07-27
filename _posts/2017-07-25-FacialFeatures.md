@@ -93,5 +93,5 @@ Now you know how Snapchat implements their facial filters!
 Thanks for reading! :smiley:
 
 <style>
-.picture {align: center}
+.picture {align: center;}
 </style>
