@@ -14,7 +14,7 @@ image: /img/facialfeatures/sunglasses.gif
 OpenCV provides a fast face detection algorithm using [Haar cascades](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html).  There are actually several other [pre-trained cascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) available.
 
 Here is a GIF of me with my face and eyes tracked:  
-<img src="/img/facialfeatures/face_eye_tracker.gif">  
+<img class="picture" src="/img/facialfeatures/face_eye_tracker.gif">  
 
 Here is a code snippet for face detection:
 ``` Python
