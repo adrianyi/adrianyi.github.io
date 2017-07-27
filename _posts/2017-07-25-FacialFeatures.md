@@ -86,12 +86,16 @@ The loss is RMS with the positions normalized to [-1,1] for both x and y.  Both 
 We can test this on my video feed again!  
 <img class="picture" src="/img/facialfeatures/facial_features.gif">  
 It has a little trouble with the reflections on my glasses, and it is slightly off when my head is tilted.  However, it performs pretty well overall.  What can we do with this?  We already saw that you can try to [interpret emotions](https://adrianyi.com/2017/06/CVMimic.html).  
-Below is a facial filter using sunglasses!
+Below is a facial filter using sunglasses!  
 <img class="picture" src="/img/facialfeatures/sunglasses.gif" title="Tada.">  
 Now you know how Snapchat implements their facial filters!
 
 Thanks for reading! :smiley:
 
 <style>
-.picture {align: center;}
+.picture {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+}
 </style>
