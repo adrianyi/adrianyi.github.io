@@ -1,17 +1,6 @@
 // Mimic Me!
 // Fun game where you need to express emojis being displayed
 
-function switchToHTTPS() {
-  var current_url = window.location.href;
-  if (current_url[4] == ':') {
-    //window.location = current_url[0:3] + 's' current_url[4:current_url.length-1];
-    window.location = 'https://adrianyi.com/2017/06/CVMimic.html';
-  }
-}
-
-window.onload = function(){ switchToHTTPS(); }
-
-
 // --- Affectiva setup ---
 
 // The affdex SDK Needs to create video and canvas elements in the DOM
