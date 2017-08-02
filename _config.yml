@@ -26,3 +26,6 @@ google_api_key:
 
 # Build settings
 markdown: kramdown
+
+# Current project
+current_project: Reproduce results from <a href="https://arxiv.org/abs/1612.08242">YOLO9000</a> using a different CNN architecture

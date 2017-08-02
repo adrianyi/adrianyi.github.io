@@ -7,7 +7,10 @@
          engineering and implementing AI agent -->
         <h2>I am Adrian Yi, a recent physics Ph.D. graduate from Boston University.</h2>
         <p class="lead">I am interested in applying my deep understanding of statistical methods, familiarity in<br>
-          working with data, and skills in programming to engineering and implementing AI agents.</p>
+          working with data, and skills in programming to engineering and implementing AI agents.<p>
+        {% if site.current_project %}
+          <p class="lead">Current project: {{site.current_project}} </p>
+        {% endif %}
       </div>
     </div>
     <!-- /.row -->
