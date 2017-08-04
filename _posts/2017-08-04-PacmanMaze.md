@@ -34,7 +34,7 @@ Below is the difference between DFS & BFS algorithm in a medium maze:
 ![BFS](/img/Pacman/medium_maze_bfs.gif "BFS will always find an optimal solution, but searches a lot")  
 The red color represents positions that were explored.  BFS looks like the winner, but we have the note that as the maze grows, time complexity for BFS will grow exponentially.
 
-[Skip to pretty GIFs](#final-results-single-goal-)
+[Skip to pretty GIFs](#final-results-single-goal)
 
 In our case where each step is a constant cost of 1, UCS will give same result as BFS.  However, we can add on UCS a *heuristic function* (becoming A*), which tries to estimate the cost to the goal, to reduce the number of states to explore.
 
