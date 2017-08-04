@@ -8,7 +8,7 @@ image: /img/Pacman/tiny_maze.gif
 
 *Keywords*: Python, depth first search, breadth first search, A* search, heuristics, suboptimal search, stack, queue, priority queue
 
-The problem is based off of UC Berkeley CS188 [project](http://ai.berkeley.edu/search.html).  The below results receive **100%** on the autograder code provided with the project.  The instructors request that no solutions are distributed or posted anywhere.  Therefore, there will be no full codes available in this post, but I will be happy to talk through them if you are interested.
+The problem is based off of UC Berkeley CS188 [project](http://ai.berkeley.edu/search.html).  The below results receive **100%** on the autograder code provided with the project.  The instructors request that no solutions are distributed or posted anywhere.  Therefore, there will be no full codes available in this post, but I will be happy to talk through them if you are interested.  Contact me [below](#contact)!
 
 ![](/img/Pacman/maze.png)
 ## Single goal search
