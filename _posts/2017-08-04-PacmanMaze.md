@@ -1,9 +1,8 @@
 ---
 layout: portfolio_entry
-title: Facial Feature Detection & Filter
+title: Pacman Maze Search
 image: /img/Pacman/tiny_maze.gif
 ---
-![](/img/Pacman/tiny_maze.gif)
 
 **I used a variety of data structures and algorithms to help Pacman navigate through several types of mazes!**
 
