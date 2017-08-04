@@ -50,13 +50,18 @@ From  the above example, you can make it more strict (or less relaxed) by calcul
 At this point, heuristic functions can be very simple.  
 
 #### Final Results (single goal)
-| Algorithm | Total path cost | Node expansions |
-| :---: | :---: | :---: |
-| DFS | 49 | 59 |
-| BFS | 19 | 92 |
-| UCS | 19 | 92 |
-| A* (Euclidean) | 19 | 56 |
-| A* (Manhattan) | 19 | 53 |
+|---
+| Algorithm | Total path cost | Node expansions
+| :-: | :-: | :-:
+| DFS | 49 | 59
+|---
+| BFS | 19 | 92
+|---
+| UCS | 19 | 92
+|---
+| A* (Euclidean) | 19 | 56
+|---
+| A* (Manhattan) | 19 | 53
 
 ![AStar](/img/Pacman/medium_maze_astar.gif "AStar searches less AND finds an optimal solution")  
 
