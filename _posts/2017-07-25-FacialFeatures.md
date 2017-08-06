@@ -7,7 +7,8 @@ image: /img/facialfeatures/sunglasses.gif
 **I created an end-to-end facial feature detector and a facial filter app using OpenCV & custom CNN.  OpenCV was used to detect faces.  CNN was used to train facial feature positions.  These were combined to create a facial filter app.**
 
 *Keywords*: Python, OpenCV, CNN, TensorFlow, Keras, Numpy, Pyplot  
-*Related projects*: [Dog Breed Classifier](http://adrianyi.com/2017/07/DogBreedClassifier.html), [Emoji Mimicking Game](https://adrianyi.com/2017/06/CVMimic.html)
+*Related projects*: [Dog Breed Classifier](https://adrianyi.com/2017/07/DogBreedClassifier.html), [Emoji Mimicking Game](https://adrianyi.com/2017/06/CVMimic.html)
+*Github*: [https://github.com/adrianyi/FacialFilter](https://github.com/adrianyi/FacialFilter)
 
 ## Face & eye detection using OpenCV
 OpenCV provides a fast face detection algorithm using [Haar cascades](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html).  There are actually several other [pre-trained cascades](https://github.com/opencv/opencv/tree/master/data/haarcascades) available.
