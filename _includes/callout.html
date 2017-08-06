@@ -1,5 +1,7 @@
 <aside class="callout">
-  <div class="text-vertical-center">
-    <h1>More projects to come...</h1>
-  </div>
+    <div class="text-vertical-center">
+        {% if site.current_project %}
+            <p class="lead">Current project: {{site.current_project}} </p>
+        {% endif %}
+    </div>
 </aside>
