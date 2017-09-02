@@ -4,14 +4,6 @@ title: Google Cloud Platform BigQuery & Machine Learning - Guessing Baby Weight
 image: /img/GCP_ML_babyweight/GCP.png
 ---
 
-<style>
-.image {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-}
-</style>
-
 **I used Google Cloud Platform to extract data from a database in [BigQuery](https://bigquery.cloud.google.com) (using BigQuery API and Dataflow), analyze it using Jupyter notebook on [DataLab](https://cloud.google.com/datalab/), and trained a DNN regressor on its [Cloud Machine Learning Engine](https://cloud.google.com/products/machine-learning/).**
 
 *Keywords*: Google Cloud Platform (BigQuery, Dataflow, Datalab, Cloud Machine Learning), Python, Pandas, Matplotlib, TensorFlow, Deep neural networks
@@ -231,11 +223,11 @@ df = bq.Query(query).execute().result().to_dataframe()
 and you end up with Pandas dataframe.  I did this with various features.  Here's sample of 9:
 
 **Average weight vs. features**  
-<img id='image' src="/img/GCP_ML_babyweight/weight_by_features.png" title="Anyone notice the 99 cigarettes/day or 99 drinks/week?">
+<img id='image' src="/img/GCP_ML_babyweight/weight_by_features.png" title="Anyone notice the 99 cigarettes/day or 99 drinks/week?" style="max-width:100%">
 
 **Average APGAR score vs. features**  
 [APGAR score](https://en.wikipedia.org/wiki/Apgar_score) is a basic 5-category health indicator showing if the baby needs any medical attention or not.  I didn't end up studying APGAR score, but rest of this study can be copied almost exactly to APGAR score instead of weight.  Here's the same plot as above, but for APGAR score (just for fun):  
-<img id='image' src="/img/GCP_ML_babyweight/APGAR_by_features.png" title="Um... how about that age range for both mothers and fathers...">  
+<img id='image' src="/img/GCP_ML_babyweight/APGAR_by_features.png" title="Um... how about that age range for both mothers and fathers..." style="max-width:100%">  
 
 So some of these features are pretty relevant, although the difference is within the standard deviation for a lot of them.  Boys are slightly heavier than girls, pre-mature babies are lighter, twins are lighter, and triplets are even lighter.  There is some relationship with the mother's age to the baby's weight, too.
 
@@ -255,7 +247,7 @@ SELECT
 ```
 
 Dataflow automatically scales the number of workers for your job.  Here's what it looks like for the query job I ran:
-<img src="/img/GCP_ML_babyweight/Dataflow.png">  
+<img src="/img/GCP_ML_babyweight/Dataflow.png" style="max-width: 100%">  
 My job was capped at 8 workers, because I'm on a free trial.  So that took about 50 minutes.
 
 Here is a summary of the machine learning part based on [wide and deep model](https://www.tensorflow.org/versions/master/tutorials/wide_and_deep):  
