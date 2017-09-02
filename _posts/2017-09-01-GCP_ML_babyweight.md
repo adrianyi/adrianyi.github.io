@@ -6,7 +6,7 @@ image: /img/GCP_ML_babyweight/GCP.png
 
 **I used Google Cloud Platform to extract data from a database in [BigQuery](https://bigquery.cloud.google.com) (using BigQuery API and Dataflow), analyze it using Jupyter notebook on [DataLab](https://cloud.google.com/datalab/), and trained a DNN regressor on its [Cloud Machine Learning Engine](https://cloud.google.com/products/machine-learning/).**
 
-*Keywords*: Google Cloud Platform (BigQuery, Dataflow, Datalab, Cloud Machine Learning), Python, Pandas, Matplotlib, TensorFlow, Deep neural networks
+*Keywords*: Google Cloud Platform (BigQuery, Dataflow, Datalab, Cloud Machine Learning), Python, SQL, Pandas, Matplotlib, TensorFlow, Deep neural networks
 *Related projects*: [Titanic Survival Predictor](https://adrianyi.com/2016/11/titanic_survival.html)
 
 ![](/img/GCP_ML_babyweight/GCP.png)
