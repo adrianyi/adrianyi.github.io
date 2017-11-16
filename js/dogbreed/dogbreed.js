@@ -5,20 +5,6 @@ var input_file = document.querySelector("#input_file")
 canvas.width = 256;
 canvas.height = 256;
 
-// submit.addEventListener('click', function() {
-//     var image = canvas.toDataURL();
-//     var result = $("#result")
-//     result.text("...thinking... (this might take up to 20 seconds)")
-//     $.ajax({
-//         type: "POST",
-//         url: "https://dog-breed-app.appspot.com/",
-//         data: image,
-//         success: function(data){
-//             result.text(data);
-//         }
-//     });
-// }, false);
-
 function drawImg() {
     if ( this.files && this.files[0] ) {
         var reader = new FileReader();
@@ -45,12 +31,11 @@ function startMedia() {
             video.play();
         })
         .catch(function(err) {
-            console.log("An error occured! " + err);
+            console.log("An error occured while loading webcam! " + err);
         });
 };
 
 webcam.addEventListener('click', function(e){
-    console.log('clicked');
     if ($("#webcam").text() !== 'Snap photo') {
         startMedia();
         $("#webcam").text('Snap photo');
