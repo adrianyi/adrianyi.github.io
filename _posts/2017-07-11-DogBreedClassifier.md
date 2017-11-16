@@ -114,30 +114,28 @@ The person looks like a . . . Basenji
 <img src="/img/dogbreedclassifier/Basenji.jpg" height="224" title="This is a Basenji!">
 
 <script type="text/javascript">
-    $("#submit").click(function(){
-        var canvasObj = document.getElementById("canvas");
-        var image = canvasObj.toDataURL();
-
-        $("#result").text("...thinking... (this might take up to 20 seconds)");
-        $.ajax({
-            type: "POST",
-            url: "https://dog-breed-app.herokuapp.com/",
-            data: image,
-            success: function(data){
-                $("#result").text(data);
-            },
-            error: function(jqxhr, textStatus, error){
-                result.text('Oh no! Error occurred :[ Try again in a bit.');
-                console.log(jqxhr);
-                console.log(textStatus);
-                console.log(error);
-            }
-        });
-    });
-</script>
-<script src="/js/dogbreed/dogbreed.js" charset="utf-8"></script>
-<script type="text/javascript">
     window.onload = function(){
         $.get('https://dog-breed-app.herokuapp.com/');
+        $("#submit").click(function(){
+            var canvasObj = document.getElementById("canvas");
+            var image = canvasObj.toDataURL();
+
+            $("#result").text("...thinking... (this might take up to 20 seconds)");
+            $.ajax({
+                type: "POST",
+                url: "https://dog-breed-app.herokuapp.com/",
+                data: image,
+                success: function(data){
+                    $("#result").text(data);
+                },
+                error: function(jqxhr, textStatus, error){
+                    result.text('Oh no! Error occurred :[ Try again in a bit.');
+                    console.log(jqxhr);
+                    console.log(textStatus);
+                    console.log(error);
+                }
+            });
+        });
     }
 </script>
+<script src="/js/dogbreed/dogbreed.js" charset="utf-8"></script>
