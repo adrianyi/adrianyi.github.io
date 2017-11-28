@@ -115,24 +115,21 @@ The person looks like a . . . Basenji
 
 <script type="text/javascript">
     window.onload = function(){
-        $.get('https://dog-breed-app.herokuapp.com/');
         $("#submit").click(function(){
             var canvasObj = document.getElementById("canvas");
             var image = canvasObj.toDataURL();
 
-            $("#result").text("...thinking... (this might take up to 20 seconds)");
+            $("#result").text("...thinking... (this might take some time...)");
             $.ajax({
                 type: "POST",
-                url: "https://dog-breed-app.herokuapp.com/",
+                url: "https://dog-breed-app.adrianyi.com/",
                 data: image,
                 success: function(data){
-                    $("#result").text(data);
+                    $("#result").text(data.result);
                 },
                 error: function(jqxhr, textStatus, error){
-                    result.text('Oh no! Error occurred :[ Try again in a bit.');
-                    console.log(jqxhr);
-                    console.log(textStatus);
-                    console.log(error);
+                    result.text('Oh no! Error occurred :[ Try again in a minute or see console for error.');
+                    console.log(jqxhr.responseJSON);
                 }
             });
         });
