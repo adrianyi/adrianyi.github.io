@@ -122,13 +122,13 @@ The person looks like a . . . Basenji
             $("#result").text("...thinking... (this might take some time...)");
             $.ajax({
                 type: "POST",
-                url: "https://dog-breed-app.adrianyi.com/",
+                url: "https://apps.adrianyi.com/predict_dog_breed",
                 data: image,
                 success: function(data){
                     $("#result").text(data.result);
                 },
                 error: function(jqxhr, textStatus, error){
-                    result.text('Oh no! Error occurred :[ Try again in a minute or see console for error.');
+                    $("#result").text('Oh no! Error occurred :[ Try again in a minute or see console for error.');
                     console.log(jqxhr.responseJSON);
                 }
             });
