@@ -28,4 +28,5 @@ google_api_key:
 markdown: kramdown
 
 # Current project
-current_project: Reproduce results from <a href="https://arxiv.org/abs/1612.08242">YOLO9000</a> using a different CNN architecture
+current_project: Working on D3, databases, and computer vision projects.
+# Reproduce results from <a href="https://arxiv.org/abs/1612.08242">YOLO9000</a> using a different CNN architecture
