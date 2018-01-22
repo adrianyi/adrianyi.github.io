@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://adrianyi.com/" # the base hostname & protocol for your site
 permalink: '/:year/:month/:title.html' # link for posts
-version: 2.0.1
+version: 2.0.2
 
 # User setting
 owner: Adrian Yi
