@@ -1,31 +1,34 @@
+<hr class="small" style="margin-bottom: 20px;">
 <section id="portfolio" class="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h2>Sample Projects</h2>
-        <h4>Click on the images to view the project!</h4>
-        <hr class="small">
-        <div class="row">
-          {% for post in site.posts %}
+  {% for post in site.posts %}
 
-          <div class="col-md-6">
-            <div class="portfolio-item" style="width:500px;height:333px;overflow:hidden;">
-              <a href="{{ post.url }}">
-                <img class="img-portfolio img-responsive" src="{{ post.image }}">
-              </a>
-            </div>
+  {% if post.featured %}
+  <div class="portfolio-item featured">
+  {% else %}
+  <div class="portfolio-item hidden">
+  {% endif %}
+    <a href="{{ post.url }}">
+      <div class="row">
+        <div class="col-xs-3 col-md-2">
+          <div class="img-portfolio">
+            <img src="{{ post.image }}">
           </div>
-
-          {% endfor %}
         </div>
-        <!-- /.row (nested) -->
-        <!-- remove for until more items are available
-        <a href="#" class="btn btn-dark">View More Items</a>
-        -->
+        <div class="col-xs-9 col-md-10">
+          <div class="align-middle text-portfolio">
+            {% if post.title-long %}
+            {{ post.title-long }}
+            {% else %}
+            {{ post.title }}
+            {% endif %}
+          </div>
+        </div>
       </div>
-      <!-- /.col-lg-10 -->
-    </div>
-    <!-- /.row -->
+    </a>
   </div>
-  <!-- /.container -->
+
+  {% endfor %}
+  <div class="more btn btn-primary center-block" style="width:10%;min-width:150px;">
+      Show more
+  </div>
 </section>

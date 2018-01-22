@@ -1,3 +1,22 @@
+// Show more
+$(".portfolio .more").click(function(e) {
+  e.preventDefault();
+  if (this.innerText == "Show more") {
+    $(".portfolio-item.hidden")
+        .addClass("normal")
+        .removeClass("hidden")
+        .animate({opacity:1},1000);
+    this.innerText = "Show less";
+  } else {
+    $(".portfolio-item.normal")
+        .animate({opacity:0},1000,function(){
+            $(".portfolio-item.normal").addClass("hidden")
+                                       .removeClass("normal");
+            $(".portfolio .more").text("Show more");
+        });
+  };
+});
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
   e.preventDefault();

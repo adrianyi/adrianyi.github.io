@@ -2,6 +2,7 @@
 layout: portfolio_entry
 title: Dog Breed Classifier
 image: /img/portfolio-dog.jpg
+featured: true
 ---
 
 # Dog Breed Classifier

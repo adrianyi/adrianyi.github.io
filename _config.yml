@@ -20,6 +20,8 @@ address: San Jose, CA
   # Feel free to add more lines here
 #telephone: 617-353-5813
 copyright: Adrian Yi
+headshot: /img/headshot.jpg
+resume: /AdrianYi_resume.pdf
 
 # API settings
 google_api_key:

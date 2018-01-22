@@ -16,6 +16,7 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -62,6 +63,9 @@ body {
 hr.small {
     max-width: 100px;
 }
+hr.medium {
+    max-width: 200px;
+}
 
 /* Side Menu */
 
@@ -82,7 +86,8 @@ hr.small {
 }
 
 .sidebar-nav {
-    position: absolute;
+    position: fixed;
+    height: 100%;
     top: 0;
     width: 250px;
     margin: 0;
@@ -103,8 +108,7 @@ hr.small {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: #444;
 }
 
 .sidebar-nav li a:active,
@@ -114,16 +118,16 @@ hr.small {
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 55px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: #555;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: #000;
     background: none;
 }
 
@@ -165,8 +169,28 @@ hr.small {
 
 /* About */
 
-.about {
-    padding: 50px 0;
+.about .headshot {
+    float:left;
+    padding-top: 25px;
+    width: 30%;
+    max-width: 300px;
+    margin:0 20px 10px 0;
+}
+
+/* Resume */
+
+.resume-embed {
+    position: relative;
+    height: 0;
+    padding-bottom: 136%;
+}
+
+.resume-pdf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
 }
 
 /* Interests */
@@ -196,19 +220,51 @@ hr.small {
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
+.portfolio-item.normal {
+    opacity: 0;
 }
 
 .img-portfolio {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    padding-top: 66.66%;
+    overflow: hidden;
 }
 
 .img-portfolio:hover {
-    opacity: 0.8;
+    opacity: 0.7;
+}
+
+.img-portfolio img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.text-portfolio {
+    color: #333 !important;
+}
+
+.text-portfolio:hover {
+    color: #999 !important;
 }
 
 /* Call to Action */
@@ -241,5 +297,5 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
 }
