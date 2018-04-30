@@ -127,7 +127,7 @@ The person looks like a . . . Basenji
                 url: "https://apps.adrianyi.com/predict_dog_breed",
                 data: image,
                 success: function(data){
-                    $("#result").text(data.result);
+                    $("#result").text(data.result).wrapInner("<a href='https://www.google.com/search?q="+data.result+"' target='_blank'></a>");
                 },
                 error: function(jqxhr, textStatus, error){
                     $("#result").text('Oh no! Error occurred :[ Try again in a minute or see console for error.');
