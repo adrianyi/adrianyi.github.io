@@ -1,6 +1,7 @@
 ---
 layout: portfolio_entry
 title: Dog Breed Classifier
+title-long: Dog Breed Classifier (See what breed you look like! Webcam supported)
 image: /img/portfolio-dog.jpg
 featured: true
 ---
