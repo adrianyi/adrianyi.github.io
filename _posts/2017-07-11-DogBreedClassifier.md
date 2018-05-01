@@ -1,34 +1,14 @@
 ---
 layout: portfolio_entry
 title: Dog Breed Classifier
-title-long: Dog Breed Classifier<br>(See what breed you look like! Webcam supported)
+title-long: Dog Breed Classifier - Convolutional Neural Networks
 image: /img/portfolio-dog.jpg
-featured: true
 ---
 
 # Dog Breed Classifier
 
-### Try the app! Either upload a file or take a snap from your webcam!
-<div class="app center-block row">
-    <div class="canvas col-sm-8">
-        <canvas class="center-block" id="canvas" width="256" height="256" style="border:4px solid; border-radius: 5px; margin-top: 10px;"></canvas>
-    </div>
-    <div class="apptext col-sm-4">
-        <div>
-            <input type="file" value="Pick a file" accept="image/*" id="input_file" style="margin: 10px; margin-top: 30px;" class="btn btn-default" style="display: inline-block;">
-        </div>
-        <div>
-            <video style="display: none; visibility: hidden" id="video"></video>
-            <button type="button" class="btn btn-default" id="webcam" style="margin: 10px;">From webcam</button>
-        </div>
-        <div class="">
-            <a href="#" id="submit" class="btn btn-default" style="margin: 10px;"><span style=""> Predict breed </span></a>
-        </div>
-        <div class="" style="margin: 10px; margin-bottom: 100px;">
-            Predicted dog breed: <strong><span id="result"></span></strong>
-        </div>
-    </div>
-</div>
+**Try the app!** Check out the app on the newer post [here](/2017/11/DogBreedApp.html)
+
 
 In this project, convolutional neural networks (CNNs) are used to classify an image into one of 133 dog breeds.  
 [First](#cnn-from-scratch), I made a CNN from scratch with random initialization (38.6% test accuracy).  
@@ -114,6 +94,9 @@ Dog breed detected is a . . . American_staffordshire_terrier
 The person looks like a . . . Basenji  
 **I'm satisfied**, below is a picture of a basenji.  
 <img src="/img/dogbreedclassifier/Basenji.jpg" height="224" title="This is a Basenji!">
+
+## Try the app
+I deployed the app on AWS, and it is available to test on a newer post [here](/2017/11/DogBreedApp.html).
 
 <script type="text/javascript">
     window.onload = function(){
